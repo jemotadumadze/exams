@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+:root {
+  
+  --grey-1: #f1f1f1;
+  --grey-2: #999999;
+  --grey-4: #989898;
+  --dark-2: #232323;
+  --blue-1: #7c9c37;
+  --green-1: #7c9c37;
+}
+
+/* -------footer-------- */
+
+.footer-sections {
+  background-color: rgb(26, 26, 26);
+  border-bottom: 1px solid #000000;
+}
+.footer-texts {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 24px 0;
+  /* justify-content: space-between; */
+  /* padding: 40px 24px; */
+  /* flex-wrap: wrap; */
+}
+
+.footer-text {
+  padding: 8px 0;
+  width: 225px;
+  height: 330px;
+}
+
+.footer-text-title {
+  /* justify-content: center; */
+  display: flex;
+  color: #666666;
+  padding-bottom: 24px;
+  font-size: 12px;
+}
+
+.footer-text-image {
+  background-image: url('./img/website.jpeg');
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 4px solid #222222;
+}
+.footer-text-descriptions {
+  display: flex;
+  color: #666666;
+  padding-top: 20px;
+  font-size: 12px;
+  width: 209px;
+}
+.footer-text-readmore {
+  display: flex;
+  font-size: 12px;
+  color: #7c9c37;
+  padding-top: 14px;
+  justify-content: left;
+}
+
+.Quicklinks {
+  color: #666666;
+  font-size: 12px;
+  padding-bottom: 14px;
+}
+.footer-quicklinks {
+  list-style-type: '»';
+  list-style-position: inside;
+  line-height: 28px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  color: #7c9c37;
+  font-size: 12px;
+}
+.footer-quicklinks li {
+  border-bottom: 1px solid #3a3a3a;
+  width: 100%;
+}
+
+.primary-link {
+  text-decoration: none;
+  color: var(--blue-1);
+}
+
+.LatestBlog {
+  color: #666666;
+  padding-bottom: 24px;
+  font-size: 12px;
+}
+.LatestBlog-first-title {
+  font-size: 14px;
+  color: #666666;
+}
+.LatestBlog-text {
+  color: rgb(151, 151, 151);
+}
+.LatestBlog-first {
+  height: 130px;
+  color: rgb(102, 102, 102);
+}
+.latestBlog-first-subtext {
+  font-size: 14px;
+}
+.latestBlog-first-button {
+  padding: 8px 0;
+  color: var(--blue-1);
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  justify-content: left;
+}
+
+.footer-text-contacts {
+  margin-left: 10px;
+}
+.footer-text-contacts-title {
+  font-size: 12px;
+  color: #666666;
+  padding-bottom: 24px;
+}
+.Company-Name span {
+  color: #666666;
+  font-size: 12px;
+  display: flex;
+  padding: 4px 0;
+}
+.Company-Name span span {
+  color: green;
+  padding: 0;
+  display: flex;
+}
+.footer-newsletter {
+  margin-top: 40px;
+}
+.footer-newsletter h4 {
+  font-size: 12px;
+  color: #666666;
+  padding-bottom: 24px;
+}
+.footer-texts input {
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+  display: flex;
+}
+.contact-name input {
+  background-color: #353535;
+  border-radius: 7px;
+  height: 32px;
+  font-size: 13px;
+  color: #807d77;
+  padding-left: 10px;
+  /* margin: 10px 0; */
+}
+.contact-adress input {
+  background-color: #353535;
+  border-radius: 7px;
+  /* margin: 4px 0; */
+  height: 32px;
+  font-size: 13px;
+  color: #807d77;
+  padding-left: 10px;
+}
+
+.contact-sumbit input {
+  width: 80px;
+  height: 31px;
+  border-radius: 7px;
+  background-color: var(--green-1);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 40px;
+  /* background-color: rgb(34, 34, 34); */
+}
+.copyright-block {
+  background-color: rgb(34, 34, 34);
+  border-top: 2px solid #3a3a3a;
+}
+.copy-container {
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 800px;
+  }
+  .topnav a {
+    font-size: 16px;
+  }
+  .slide {
+    justify-content: center;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  .nav-bar {
+    min-height: 150px;
+  }
+  .intro {
+    justify-content: center;
+  }
+  .intro-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-texts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
