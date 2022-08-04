@@ -49,6 +49,7 @@
   border-radius: 13px;
   background-color: #e1e1e1;
   border: 0;
+  padding-left: 10px;
 }
 .sumbit {
   border-radius: 100%;
@@ -212,7 +213,6 @@
 }
 .Latest-work {
   width: 225px;
-  height: 265px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,13 +232,15 @@
 }
 
 .Latest-work-descriptions {
-  width: 225px;
-  height: 125px;
+  
+  
   background-color: #f0f0f0;
+  padding: 20px;
+  
 }
 .Latest-work-descriptions h3 {
   font-size: 18px;
-  padding: 20px 0 20px 14px;
+margin-bottom: 20px;
   color: #7c9c37;
   font-family: 'Georgia';
 }
@@ -247,7 +249,7 @@
   line-height: 19px;
   color: #666666;
   font-family: 'Georgia';
-  padding: 0 19px 20px 15px;
+  /* padding: 0 19px 20px 15px; */
   display: flex;
 }
 .overlay {
@@ -261,8 +263,9 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .Latest-work:hover {
+
   border: 2px solid green;
-  background-size: 140%;
+ background-size: 90%;
 }
 
 .Latest-divider {
@@ -279,21 +282,58 @@
   background-color: rgb(255, 255, 255);
   padding-bottom: 55px;
 }
-.content {
-  width: 472px;
+.service-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  padding-top: 50px;
+}
+.members{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.member-card img{
+  width: 225px;
+height: 225px;
+margin-bottom: 24px;
+}
+.member-card p{
+  font-size: 13px;
+ font-weight: bold;
+color: #666666;
+font-family: "Georgia";
+margin-bottom: 13px;
+ width: 225px;
+ margin-right: 0;
+}
+.member-card span{
+  font-size: 13px;
+  font-weight: normal;
+ color: #666666;
+ font-family: "Georgia";
+}
+.member-card a{
+font-size: 13px;
+text-decoration: none;
+color: #7b9b37;
+font-family: "Georgia";
+}
 
+.content {
   padding-left: 13px;
+  display: flex;
+  flex-direction: column;
 }
 .service-header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e2e2e2;
-  padding-top: 50px;
   padding-bottom: 14px;
 }
 .service-header h4 {
   font-size: 18px;
-
   color: #666666;
   font-family: 'Georgia';
 }
