@@ -2,12 +2,10 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 .container {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
-
 :root {
   --grey-1: #f1f1f1;
   --grey-2: #999999;
@@ -16,9 +14,7 @@
   --blue-1: #7c9c37;
   --green-1: #7c9c37;
 }
-
 /* header */
-
 .header-top {
   height: 34px;
   display: flex;
@@ -37,14 +33,13 @@
   font-size: 12px;
   color: #696969;
 }
-
 .search {
   position: relative;
   margin: 0;
   display: flex;
 }
 .input-text {
-  width: 210px;
+  max-width: 210px;
   height: 25px;
   border-radius: 13px;
   background-color: #e1e1e1;
@@ -77,7 +72,6 @@
   width: 100%;
   background-color: #222222;
 }
-
 .header-bottom-title {
   display: flex;
   width: 100%;
@@ -86,21 +80,25 @@
   justify-content: space-between;
   align-items: center;
 }
+.responsive-btn {
+  width: 60px;
+  height: 30px;
+  display: none;
+  color: white;
+  background-color: #7c9c37;
+}
 .bottom-logo h1 {
   line-height: 20px;
   font-size: 36px;
-
   margin-bottom: 8px;
   color: #ffffff;
 }
-
 .bottom-logo span {
   line-height: 14px;
   font-size: 12px;
   font-weight: 0;
   color: #ffffff;
 }
-
 .navbar-sections {
   display: flex;
   list-style-type: none;
@@ -108,7 +106,6 @@
   /* width: 74px; */
   padding-top: 17px;
 }
-
 .navbar-title {
   height: 34px;
   border-right: 1px solid #9f9f9f;
@@ -127,12 +124,11 @@
 .navbar-title:hover h3 {
   color: #7c9c37;
 }
-
 /* slider */
 .section-slider {
   background-color: #333333;
 }
-.sliders {
+.slider-item {
   position: relative;
   height: 380px;
   display: flex;
@@ -158,7 +154,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .btn-left {
   position: absolute;
   border: 1px solid #666666;
@@ -198,13 +193,10 @@
   margin-bottom: 49px;
   border-radius: 30%;
 }
-
 /* Latest-work */
-
 .Latest-work-sections {
   background-color: rgb(255, 255, 255);
 }
-
 .Latest-works {
   /* height: 370px; */
   display: grid;
@@ -212,11 +204,11 @@
   gap: 19px;
 }
 .Latest-work {
-  width: 225px;
+  border: 1px solid transparent;
+  max-width: 225px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -224,23 +216,19 @@
 .Latest-work-img {
   background-image: url('./img/36a790fc-ea03-49b9-96ad-f818457b3ab4.png');
   height: 140px;
-  width: 225px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120%;
   position: relative;
 }
-
 .Latest-work-descriptions {
-  
-  
   background-color: #f0f0f0;
   padding: 20px;
-  
 }
 .Latest-work-descriptions h3 {
   font-size: 18px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
   color: #7c9c37;
   font-family: 'Georgia';
 }
@@ -263,11 +251,8 @@ margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .Latest-work:hover {
-
-  border: 2px solid green;
- background-size: 90%;
+  border: 1px solid green;
 }
-
 .Latest-divider {
   display: flex;
   width: 800px;
@@ -282,45 +267,44 @@ margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
   padding-bottom: 55px;
 }
-.service-container{
+.service-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 24px;
   padding-top: 50px;
 }
-.members{
+.members {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
 }
-.member-card img{
+.member-card img {
   width: 225px;
-height: 225px;
-margin-bottom: 24px;
+  height: 225px;
+  margin-bottom: 24px;
 }
-.member-card p{
+.member-card p {
   font-size: 13px;
- font-weight: bold;
-color: #666666;
-font-family: "Georgia";
-margin-bottom: 13px;
- width: 225px;
- margin-right: 0;
+  font-weight: bold;
+  color: #666666;
+  font-family: 'Georgia';
+  margin-bottom: 13px;
+  width: 225px;
+  margin-right: 0;
 }
-.member-card span{
+.member-card span {
   font-size: 13px;
   font-weight: normal;
- color: #666666;
- font-family: "Georgia";
+  color: #666666;
+  font-family: 'Georgia';
 }
-.member-card a{
-font-size: 13px;
-text-decoration: none;
-color: #7b9b37;
-font-family: "Georgia";
+.member-card a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #7b9b37;
+  font-family: 'Georgia';
 }
-
 .content {
   padding-left: 13px;
   display: flex;
@@ -377,7 +361,6 @@ font-family: "Georgia";
   background-color: #353535;
 }
 /* -------footer-------- */
-
 .footer-sections {
   background-color: rgb(26, 26, 26);
   border-bottom: 1px solid #000000;
@@ -391,13 +374,11 @@ font-family: "Georgia";
   /* padding: 40px 24px; */
   /* flex-wrap: wrap; */
 }
-
 .footer-text {
   padding: 8px 0;
   width: 225px;
   height: 330px;
 }
-
 .footer-text-title {
   /* justify-content: center; */
   display: flex;
@@ -405,7 +386,6 @@ font-family: "Georgia";
   padding-bottom: 24px;
   font-size: 12px;
 }
-
 .footer-text-image {
   background-image: url('./img/website.jpeg');
   height: 90px;
@@ -428,7 +408,6 @@ font-family: "Georgia";
   padding-top: 14px;
   justify-content: left;
 }
-
 .Quicklinks {
   color: #666666;
   font-size: 12px;
@@ -448,12 +427,10 @@ font-family: "Georgia";
   border-bottom: 1px solid #3a3a3a;
   width: 100%;
 }
-
 .primary-link {
   text-decoration: none;
   color: var(--blue-1);
 }
-
 .LatestBlog {
   color: #666666;
   padding-bottom: 24px;
@@ -481,7 +458,6 @@ font-family: "Georgia";
   display: flex;
   justify-content: left;
 }
-
 .footer-text-contacts {
   margin-left: 10px;
 }
@@ -522,18 +498,15 @@ font-family: "Georgia";
   font-size: 13px;
   color: #807d77;
   padding-left: 10px;
-  /* margin: 10px 0; */
 }
 .contact-adress input {
   background-color: #353535;
   border-radius: 7px;
-  /* margin: 4px 0; */
   height: 32px;
   font-size: 13px;
   color: #807d77;
   padding-left: 10px;
 }
-
 .contact-sumbit input {
   width: 80px;
   height: 31px;
@@ -545,13 +518,11 @@ font-family: "Georgia";
   justify-content: center;
   margin-top: 10px;
 }
-
 .copyright {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   height: 40px;
-  /* background-color: rgb(34, 34, 34); */
 }
 .copyright-block {
   background-color: rgb(34, 34, 34);
@@ -565,33 +536,71 @@ font-family: "Georgia";
   justify-content: space-between;
   font-size: 12px;
 }
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
   .container {
-    width: 800px;
+    padding: 0 24px;
   }
-  .topnav a {
-    font-size: 16px;
-  }
-  .slide {
+  .responsive-btn {
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-  }
-  .nav-bar {
-    min-height: 150px;
-  }
-  .intro {
-    justify-content: center;
-  }
-  .intro-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .header-bottom-title {
+    justify-content: space-between;
+    flex-direction: row;
   }
   .footer-texts {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .members {
+    grid-template-columns: 1fr;
+  }
+  .Latest-divider,
+  .divider {
+    width: 100%;
+  }
+  .navbar-sections {
+    display: none;
+  }
+  .member-card,
+  .footer-text {
+    margin: auto;
+  }
+  .responsive-container {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0 24px;
+  }
+  .responsive-container {
+    padding: 0;
+  }
+  .header-bottom-title {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .responsive-btn {
+    margin-left: 80%;
+  }
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+  .Latest-works {
+    grid-template-columns: 1fr 1fr;
+  }
+  .shout span {
+    font-size: 15px;
+  }
+  .footer-texts {
+    grid-template-columns: 1fr;
+  }
+  .header-top {
+    display: none;
+  }
+  .content {
+    padding-left: 0;
+    padding-bottom: 24px;
   }
 }
